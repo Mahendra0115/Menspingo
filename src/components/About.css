@@ -1,0 +1,21 @@
+.about-section { padding: 120px 0; background: linear-gradient(180deg,var(--dark-2) 0%,var(--dark-3) 100%); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.about-title { font-size: clamp(1.8rem,3.5vw,2.8rem); font-weight: 800; color: var(--text-primary); margin: 16px 0 24px; line-height: 1.15; }
+.about-desc { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px; }
+.achievements-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 32px; }
+.achievement-item { display: flex; align-items: center; gap: 10px; font-size: 0.86rem; color: var(--text-secondary); }
+.check-icon { color: #50fa7b; flex-shrink: 0; font-size: 1rem; }
+.values-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+.value-card { padding: 24px; text-align: center; }
+.value-icon { width: 44px; height: 44px; background: rgba(108,99,255,0.15); color: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin: 0 auto 12px; transition: var(--transition); }
+.value-card:hover .value-icon { background: var(--primary); color: white; transform: scale(1.1); }
+.value-title { font-size: 0.92rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
+.value-desc { font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; }
+.about-banner { padding: 28px; }
+.banner-content { display: flex; align-items: center; justify-content: space-around; }
+.banner-stat { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.banner-number { font-size: 2.2rem; font-weight: 800; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-family: 'Space Grotesk',sans-serif; }
+.banner-label { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+.banner-divider { width: 1px; height: 50px; background: var(--glass-border); }
+@media (max-width: 968px) { .about-grid { grid-template-columns: 1fr; gap: 60px; } .achievements-list { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .values-grid { grid-template-columns: 1fr; } }
